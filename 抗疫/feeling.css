@@ -1,0 +1,355 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-image: url(images/心得体会/bg1.gif);
+    /*background: linear-gradient(lightskyblue,blueviolet,lightskyblue,blueviolet,lightskyblue*/
+    ,blueviolet);
+}
+.head{
+    height: 75px;
+}
+.foot{
+    width: 1050px;
+    height: 450px;
+    margin:23px auto;
+}
+.box2{
+    width: 1275px;
+    margin:0 auto;
+    box-shadow: -2px -20px 18px #335178;
+    /*box-shadow: -2px -10px 10px lightskyblue inset;*/
+    background-image: url(images/心得体会/bg4.jpg);
+}
+.title2>p{
+    color: #54d6ff;
+    text-shadow: 2px 2px 2px #000;
+}
+.bu1{
+    left: 3px;
+    top: 11px;
+}
+.bu2{
+    left: 13px;
+    top: 50px;
+}
+.bu3{
+    left: 60px;
+    top: 35px;
+}
+.bu4{
+    left: 156px;
+    top: 3px;
+}
+.bu5{
+    left: 1200px;
+    top: 29px;
+}
+.title2 span{
+    border:1px solid #fff;
+}
+
+.box3{
+    width: 1125px;
+    height: 450px;
+    position: relative;
+    margin-left: -30px;
+}
+.box3>img{
+    height: 83px;
+    width: 68px;
+    position: absolute;
+    border:1px solid lightskyblue;
+    box-shadow: 5px 5px 10px lightskyblue;
+}
+.box3>img:hover{
+    box-shadow: 5px 5px 10px rgb(99,59,260);
+}
+.p1{
+    top:90px;
+    left:-2px;
+}
+.p2{
+    top:90px;
+    left:71px;
+}
+.p3{
+    top:90px;
+    left:144px;
+}
+.p4{
+    top:90px;
+    left:217px;
+}
+.p5{
+    top:89px;
+    left:290px;
+}
+.p6{
+    top:0px;
+    left:71px;
+}
+.p7{
+    top:0px;
+    left:217px;
+}
+.p8{
+    top:178px;
+    left:71px;
+}
+.p9{
+    top:178px;
+    left:144px;
+}
+.p10{
+    top:178px;
+    left:217px;
+}
+.p11{
+    top:266px;
+    left:144px;
+}
+.p12{
+    top:178px;
+    left:0px;
+}
+.p13{
+    top:178px;
+    left:290px;
+}
+.p14{
+     top:266px;
+     left:71px;
+}.p15{
+      top:266px;
+      left:217px;
+
+ }
+.p16{
+       top:355px;
+       left:143px;
+}
+.con {
+    background:linear-gradient(lightskyblue,#2987e4,lightskyblue);
+    width: 640px;
+    height: 420px;
+    margin-right: 15px;
+    margin-top: 1px;
+    box-shadow: 8px 11px 15px lightskyblue;
+}
+.ctr2{
+    font:700 20px/28px 华文行楷;
+    color: #fff;
+    text-shadow: 1px 1px 1px #000;
+}
+.title3{
+    margin-left: 15px;
+    margin-top: 8px;
+}
+.con p{
+    margin:15px;
+}
+.box4{
+    width: 1275px;
+    height: 1000px;
+}
+.box4{
+    padding:20px;
+    background: linear-gradient(lightskyblue,#fff,lightskyblue);
+    box-shadow: -5px -5px 20px #222;
+    width: 1050px;
+    height: 500px;
+    margin:54px auto 0px;
+    position: relative;
+}
+
+
+.box4-t{
+    width:160px;
+    height:40px;
+    transform:rotate(-40deg);
+    -ms-transform:rotate(-40deg);
+    -moz-transform:rotate(-40deg);
+    -webkit-transform:rotate(-40deg);
+    -o-transform:rotate(-40deg);
+    position:absolute;
+    top:0px;
+    left:-50px;
+    font:700 25px/40px 华文行楷;
+    padding:20px;
+    color:#fff;
+    background:linear-gradient(greenyellow,lightskyblue);
+    text-shadow:2px 2px 2px #000;
+    box-shadow:-5px 4px 10px #222;
+}
+.box4 p{
+    font:700 16px/37px SimSun;
+    color: #2987e4;
+}
+.box4>img{
+    width: 330px;
+    height: 370px;
+    margin:10px 20px 20px 10px;
+    box-shadow: 5px 5px 10px lightskyblue;
+}
+.box4 p img{
+    width: 200px;
+    height: 289px;
+    margin-right: -10px;
+    box-shadow: -5px 5px 10px #fff;
+}
+.box5{
+    width: 1090px;
+    height: 950px;
+    margin:45px auto 10px;
+    /*padding-top: 10px;*/
+    /*background-image: url(images/心得体会/bg1.gif);*/
+    position: relative;
+    /*box-shadow: -6px -6px 10px #000;*/
+}
+.c-t{
+    box-shadow: -5px 6px 16px lightskyblue;
+    border:none;
+    margin-left: -64px;
+    width: 200px;
+    margin-top: -15px;
+}
+.box5 div{
+    position: relative;
+}
+.wish1{
+    top: 68px;
+    left: 30px;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    text-shadow: 0px 1px 1px #fff;
+    box-shadow: -6px 10px 20px #CA151D inset;
+}
+.box5 .wish{
+    background-image: url(images/心得体会/bg1.gif);
+    position: absolute;
+    font:900 16px/30px SimSun;
+    border-radius: 50%;
+    /*background-color: rgba(100,100,200,0.3);*/
+}
+.wish1{
+    color: #CA151D;
+}
+.wish>p{
+    margin:5px;
+}
+.wish2{
+    top: 268px;
+    left: 176px;
+    width: 360px;
+    height: 360px;
+    text-shadow: 0px 1px 1px #fff;
+    box-shadow: 10px 10px 30px blueviolet inset;
+}
+.wish2>p{
+    text-align: center;
+    font-size: 18px;
+    color:blueviolet;
+    margin: 15px;
+    line-height: 35px;
+    margin:30px 20px 20px 20px;
+}
+.wish3{
+    top: 0px;
+    left: 450px;
+    height: 250px;
+    width: 250px;
+    box-shadow: 10px 15px 30px lawngreen inset;
+}
+.wish3>p{
+    color: lawngreen;
+    margin:40px 15px 15px 15px;
+    text-shadow: 0px 1px 1px #000;
+    font-size: 17px;
+}
+.wish4{
+    width: 350px;
+    height: 350px;
+    top: 40px;
+    right: -10px;
+    box-shadow: -11px 2px 40px blue inset;
+}
+.wish4>p{
+    color: blue;
+    text-shadow: 1px 1px 1px #fff;
+    font-size: 18px;
+    margin:40px 30px 10px 10px;
+}
+.wish5{
+    top: 665px;
+    right: 360px;
+    width: 240px;
+    height: 240px;
+    box-shadow: 10px 10px 20px orange inset;
+}
+.wish5>p{
+    color: orange;
+    text-shadow: 0px 1px 1px #000;
+    font-size: 18px;
+    margin:50px 15px 10px 30px;
+    line-height: 40px;
+}
+.wish6{
+    bottom: 20px;
+    left: 20px;
+    width: 280px;
+    height: 280px;
+    box-shadow: 10px 10px 30px yellow inset;
+}
+.wish6>p{
+    color: yellow;
+    text-shadow: 0px 1px 1px #000;
+    margin:35px 10px 20px 20px;
+    font-size: 18px;
+    line-height: 35px;
+    text-align: center;
+}
+.wish7{
+    width: 260px;
+    height: 260px;
+    bottom: 260px;
+    right: 30px;
+    box-shadow: 10px 10px 20px limegreen inset;
+}
+.wish7>p{
+    text-align: center;
+    color: #00B200;
+    text-shadow: 0px 1px 1px #000;
+    margin:35px 10px 20px 30px;
+    font-size: 17px;
+    line-height: 35px;
+}
+.com-footer{
+    box-shadow: -2px -20px 18px lightskyblue;
+    height: 140px;
+    width: 1275px;
+    margin:-23px auto 0px;
+    position: relative;
+    background: linear-gradient(lightskyblue,blueviolet);
+}
+.com-footer a{
+    font:900 25px/30px 华文行楷;
+    color: #fff;
+    text-shadow: 2px 2px 2px #000;
+    height: 40px;
+    width: 120px;
+    position: absolute;
+}
+.com-footer a:hover{
+    color: #2987e4;
+    text-shadow: none;
+    text-decoration: underline;
+}
+.com-footer>.com-f1{
+    top: 30px;
+    right: 30px;
+}
+.com-footer>.com-f2{
+    top: 30px;
+    right: 130px;
+}

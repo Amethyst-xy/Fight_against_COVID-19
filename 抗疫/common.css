@@ -1,0 +1,234 @@
+body,ul,ol,li,dl,dt,dd,p,h1,h2,h3,h4,h5,h6,for,input{
+    padding:0;
+    margin:0;
+}
+li{
+    list-style-type:none;
+}
+a{
+    text-decoration: none;
+    color:#000;
+}
+a:hover{
+    color: #CA151D;
+}
+body{
+    font-family: SimSun;
+    font-size: 12px;
+}
+.box{
+    width: 100%;
+    min-width: 1200px;
+    overflow: hidden;
+}
+.m-w{
+    width: 1200px;
+}
+.fl{
+    float: left;
+}
+.fr{
+    float: right;
+}
+.clearfix{
+    content: "";
+    display: block;
+    height: 0px;
+    clear: both;
+}
+.c-crt{
+    color: blueviolet;
+    font-family: 华文行楷;
+    text-shadow: 4px 4px 8px lightskyblue;
+}
+.c-crt1{
+    font-size: 15px;
+    font-family: SimSun;
+    line-height: 26px;
+    font-weight: 700;
+    margin:8px 30px;
+}
+.c-crt1 p{
+    margin:25px;
+}
+.c-crt1 h3{
+    font-size: 18px;
+    font-weight: 900;
+    line-height: 22px;
+    margin-left: 16px;
+    margin-top: 26px;
+    color: #2987e4;
+}
+.line{
+    height:2px;
+    background-color:#e7e7e4;
+    flex-grow:1;
+}
+.text{
+    top:0;
+    color: #2987e4;
+    font-size: 18px;
+    font-weight: 900;
+    transform:translateY(-8px);
+}
+.box1{
+    height:34px;
+    width: 1050px;
+    display:flex;
+    margin-top: 38px;
+    /*justify-content:space-around;*/
+    /*align-items: flex-start;*/
+}
+/*标题*/
+.title{
+    width: 150px;
+    height: 45px;
+    border-left: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    padding-left: 3px;
+    padding-bottom: 2px;
+    box-shadow: -5px 6px 15px #2987e4;
+    margin: 0 0 22px 22px;
+    position: relative;
+}
+.title1{
+    /*width: 200px;*/
+    height: 45px;
+    border-left: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    /*padding-left: 5px;*/
+    padding-bottom: 3px;
+    background-color: #fff;
+    box-shadow: -5px 6px 15px #2987e4;
+    margin: 0 15px 22px 15px;
+    position: relative;
+}
+.title2{
+    /*width: 200px;*/
+    height: 45px;
+    /*border-left: 1px solid #ccc;*/
+    /*border-bottom: 1px solid #ccc;*/
+    /*padding-left: 5px;*/
+    padding-bottom: 3px;
+    box-shadow: -10px 10px 20px #2987e4;
+    margin: 0 15px 22px 15px;
+    position: relative;
+}
+.title1 p{
+    height: 45px;
+    color: #000;
+    font:900 23px/45px 华文行楷;
+    position: absolute;
+    left: 33px;
+    top: 3px;
+}
+.title2 p{
+    height: 45px;
+    color: #000;
+    font:900 23px/45px 华文行楷;
+    position: absolute;
+    left: 33px;
+    top: 3px;
+}
+.b1{
+    width: 23px;
+    height: 23px;
+    border:1px solid #2987e4;
+    box-shadow: 5px 2px 10px #2987e4 inset;
+    border-radius: 50%;
+    position: absolute;
+}
+.b2{
+    width: 15px;
+    height: 15px;
+    border:1px solid #2987e4;
+    box-shadow: 3px 5px 10px #2987e4 inset;
+    border-radius: 50%;
+    position: absolute;
+}
+.b3{
+    width: 11px;
+    height: 11px;
+    border:1px solid #2987e4;
+    box-shadow: 5px 2px 10px #2987e4 inset;
+    border-radius: 50%;
+    position: absolute;
+}
+.title p{
+    height: 45px;
+    color: #000;
+    font:900 23px/45px 华文行楷;
+    position: absolute;
+    left: 33px;
+    top: 3px;
+}
+.deco1{
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    border:1px solid lightskyblue;
+    border-radius: 50%;
+    box-shadow: 3px 4px 10px lightskyblue inset;
+}
+.deco2{
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    border:1px solid lightskyblue;
+    border-radius: 50%;
+    box-shadow: 3px 5px 20px lightskyblue inset;
+}
+.deco3{
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border:1px solid lightskyblue;
+    border-radius: 50%;
+    box-shadow: 3px 2px 7px lightskyblue inset;
+}
+.pos1{
+    left: 200px;
+    top: 30px;
+}
+.pos2{
+    left: 90px;
+    top: 77px;
+}
+.pos3{
+    left: 30px;
+    top: 60px;
+}
+.pos4{
+    left: 118px;
+    top: 5px;
+}.pos5{
+     right: 300px;
+     top: 50px;
+ }.pos6{
+      right: 200px;
+      top: 70px;
+  }
+.pos7{
+    right: 250px;
+    top: 15px;
+}
+.pos8{
+    right: 100px;
+    top: 10px;
+}
+.pos9{
+    right: 133px;
+    top: 83px;
+}
+.pos10{
+    right: 300px;
+    bottom: 7px;
+}
+.pos11{
+    right: 270px;
+    bottom: 40px;
+}
+.pos12{
+    right: 290px;
+    bottom: 100px;
+}

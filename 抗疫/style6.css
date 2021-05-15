@@ -1,0 +1,145 @@
+body{
+    background-image: url(images/心得体会/bg4.jpg);
+    background-size: 100% 100%;
+    background-attachment: fixed;
+}
+.head{
+    height: 75px;
+}
+.foot{
+    width: 1050px;
+    height: 450px;
+    margin:23px auto;
+}
+.box2{
+    width: 1275px;
+    margin:0 auto;
+}
+.title2 p{
+    color: #fff;
+    text-shadow: 5px 5px 5px #000;
+}
+.bu1{
+    left: 3px;
+    top: 11px;
+}
+.bu2{
+    left: 13px;
+    top: 50px;
+}
+.bu3{
+    left: 60px;
+    top: 35px;
+}
+.bu4{
+    left: 156px;
+    top: 3px;
+}
+.bu5{
+    left: 1200px;
+    top: 29px;
+}
+.title2 span{
+    border:1px solid #fff;
+}
+
+.box3{
+    width: 1125px;
+    height: 450px;
+    position: relative;
+    margin-left: -30px;
+}
+.box3>img{
+    height: 83px;
+    width: 68px;
+    position: absolute;
+    border:1px solid lightskyblue;
+    box-shadow: 5px 5px 10px lightskyblue;
+}
+.box3>img:hover{
+    box-shadow: 5px 5px 10px rgb(99,59,260);
+}
+.p1{
+    top:90px;
+    left:-2px;
+}
+.p2{
+    top:90px;
+    left:71px;
+}
+.p3{
+    top:90px;
+    left:144px;
+}
+.p4{
+    top:90px;
+    left:217px;
+}
+.p5{
+    top:89px;
+    left:290px;
+}
+.p6{
+    top:0px;
+    left:71px;
+}
+.p7{
+    top:0px;
+    left:217px;
+}
+.p8{
+    top:178px;
+    left:71px;
+}
+.p9{
+    top:178px;
+    left:144px;
+}
+.p10{
+    top:178px;
+    left:217px;
+}
+.p11{
+    top:266px;
+    left:144px;
+}
+.p12{
+    top:178px;
+    left:0px;
+}
+.p13{
+    top:178px;
+    left:290px;
+}
+.p14{
+     top:266px;
+     left:71px;
+}.p15{
+      top:266px;
+      left:217px;
+
+ }
+.p16{
+       top:355px;
+       left:143px;
+}
+.con {
+    width: 640px;
+    height: 420px;
+    margin-right: 15px;
+    background-color: rgba(135, 206, 250,0.1);
+    margin-top: 1px;
+    box-shadow: 8px 11px 15px lightskyblue;
+}
+.ctr2{
+    font:700 23px/30px 华文行楷;
+    color: #eee;
+    text-shadow: 5px 5px 5px #002DB2;
+}
+.title3{
+    margin-left: 15px;
+    margin-top: 8px;
+}
+.con p{
+    margin:15px;
+}

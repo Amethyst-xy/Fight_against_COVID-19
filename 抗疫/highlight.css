@@ -1,0 +1,444 @@
+body{
+    margin: 0;
+    padding:0;
+    height: 2860px;
+    position: relative;
+    background:linear-gradient(#000,blueviolet,#000,blueviolet,#000,blueviolet);
+}
+.box2{
+    width: 1350px;
+    height: 449px;
+    background:linear-gradient(blueviolet,#000,#000);
+    margin: 0 auto;
+    box-shadow: 0px 10px 20px #000;
+}
+.h-c{
+    width: 1170px;
+    height: 400px;
+    padding-left: 30px;
+}
+.c-l p{
+    text-align: center;
+}
+.mv {
+    width: 700px;
+    height: 400px;
+    background-image: url(images/精彩瞬间/mvbg.png);
+    background-size: 700px 400px;
+}
+video{
+    margin:20px 50px;
+    border:none;
+}
+marquee{
+    height: 40px;
+    line-height: 40px;
+    box-shadow: 0px 5px 5px lightskyblue;
+    margin-bottom: 5px;
+    font:700 21px/40px 华文行楷;
+    color: #fff;
+    text-shadow: 3px 3px 4px #2987e4;
+    background: url(images/心得体会/heart.gif);
+}
+.part a{
+    display: inline-block;
+    width: 200px;
+    height: 60px;
+    font:900 35px/60px 华文行楷;
+    /*color: #fff;*/
+    text-shadow: 1px 2px 2px #fff;
+    margin-top: 30px;
+}
+.part p{
+    font:700 16px/30px SimSun;
+    color: #fff;
+}
+.c-r{
+    width: 212px;
+}
+.c-r1{
+    padding-top: 67px;
+    margin-right: -27px;
+    height: 300px;
+}
+
+.part{
+    position: relative;
+    padding:0px 23px;
+}
+.part2{
+    width: 200px;
+    box-shadow: -5px -5px 10px lightskyblue;
+    height: 304px;
+    margin:50px 10px 45px 15px;
+}
+.part span{
+    position: absolute;
+}
+.bu1{
+    left: 29px;
+    top:-29px;
+}
+.bu2{
+    left: -2px;
+    top:-1px;
+}
+.bu3{
+    left: -1px;
+    top:47px;
+}
+.bu4{
+    left: 566px;
+    top:-15px;
+}
+.bu5{
+    left: -17px;
+    top:-24px;
+}
+.bu6{
+    left: -19px;
+    top:17px;
+}
+.bu7{
+    left: 606px;
+    top:-20px;
+}
+.r-f{
+    width: 225px;
+    height: 72px;
+    background:linear-gradient(#fff,blueviolet,#000);
+    padding:12px 8px;
+    box-shadow: -3px 3px 8px lightskyblue;
+    margin-top: 20px;
+}
+.l-t{
+    display: inline-block;
+    font-size: 13px;
+    font-weight: 700;
+    margin-top:8px;
+}
+.r-f a{
+    display: block;
+    font-size: 12px;
+    margin-top: 8px;
+    font-family: SimSun;
+    line-height: 17px;
+}
+.r-f a:hover{
+    color: #fff;
+}
+.r-f span{
+    display: inline-block;
+    width: 122px;
+}
+.c-r>a{
+    display: inline-block;
+    font:700 14px/30px SimSun;
+    color: lightskyblue;
+    text-decoration: underline;
+    margin-top: 30px;
+}
+.nav2{
+    color: #fff;
+    height: 120px;
+    width: 1350px;
+    margin:20px auto;
+    position: relative;
+    background: linear-gradient(#ccc,blueviolet,blueviolet,#000);
+    box-shadow: 10px 10px 20px blueviolet;
+}
+.r{
+    margin-right: 300px;
+}
+dl{
+    width: 160px;
+    height: 100px;
+    text-align: center;
+}
+dt{
+    width: 160px;
+    height: 40px;
+    text-shadow: 1px 2px 2px #000;
+    color: #fff;
+    /*text-align: center;*/
+    font:700 14px/40px Microsoft YaHei;
+}
+dd>a{
+    display: block;
+    width: 160px;
+    height: 25px;
+    color: #eee;
+    /*text-align: center;*/
+    font-size: 14px;
+}
+dd>a:hover{
+    color: lightskyblue;
+}
+.con1{
+    width: 1000px;
+    height: 245px;
+    margin:20px auto;
+    box-shadow: -5px 5px 5px blueviolet;
+}
+h2{
+    width: 200px;
+    height: 50px;
+    font:700 20px/50px 华文行楷;
+    color: #fff;
+    padding:10px 30px 10px;
+    text-shadow: 2px 2px 2px #000;
+}
+.con1-c{
+    width: 660px;
+    height: 165px;
+    color: #fff;
+    margin-left: 32px;
+    display: inline-block;
+}
+.con1-c img{
+    width: 200px;
+    height: 120px;
+    box-shadow: 4px 4px 5px lightskyblue;
+}
+.con1-c p{
+    width: 200px;
+    height: 25px;
+    margin:13px 10px;
+    color: #fff;
+    font-size: 13px;
+    font-weight: 700;
+    font-family:"Microsoft YaHei";
+}
+.con2>img{
+    width: 240px;
+    height: 240px;
+    border-radius: 50%;
+    position: absolute;
+    top: -340px;
+    right: 20px;
+    box-shadow: 10px 10px 20px lightskyblue;
+}
+.con2{
+    margin:90px auto 0;
+    width: 1000px;
+    height: 820px;
+    position: relative;
+    box-shadow: -5px -5px 5px blueviolet;
+}
+.con2-h{
+    width: 1000px;
+    position: absolute;
+    top: -66px;
+    left: -4px;
+}
+.con2-l{
+    width: 670px;
+    height: 500px;
+    margin-left: 25px;
+}
+.con2-l li{
+    width: 200px;
+    height: 300px;
+    border:1px solid blueviolet;
+    margin:15px 6px;
+    position: relative;
+    top:0;
+    background-color: #fff;
+    box-shadow: -2px -15px 40px blueviolet inset;
+}
+.con2-l li:hover{
+    top:-2px;
+    z-index: 20;
+    background: url("images/心得体会/heart.gif");
+    box-shadow:10px 10px 20px lightskyblue;
+}
+.con2-l img{
+    width: 200px;
+    height: 250px;
+}
+.title3{
+    width: 190px;
+    height: 30px;
+    color: #fff;
+    font: 700 14px / 20px SimSun;
+    margin: 0px 10px;
+    text-shadow: 1px 1px 1px #000;
+}
+.title4{
+    width: 100px;
+    /*margin-left: 20px;*/
+}
+/*.con2-l div{*/
+/*    display: none;*/
+/*    width: 200px;*/
+/*    height: 218px;*/
+/*    z-index: 1000;*/
+/*    background:linear-gradient(lightskyblue,blueviolet);*/
+/*    position: absolute;*/
+/*    top: 95px;*/
+/*    left: 50px;*/
+/*    box-shadow: 4px 4px 8px lightskyblue;*/
+/*}*/
+/*.con2-l li:hover div{*/
+/*    display: block;*/
+/*}*/
+
+.mvr{
+    width: 300px;
+    height: 680px;
+    position: absolute;
+    top: 132px;
+    right: -7px;
+}
+
+.con2-r{
+    width: 300px;
+    height: 400px;
+}
+.con2-t{
+    position: absolute;
+    right: 110px;
+    top: 60px;
+    font:700 16px/30px SimSun;
+    color: #fff;
+    box-shadow: -2px 2px 5px blueviolet;
+}
+.con2-r li{
+    width: 513px;
+    height: 60px;
+}
+.con2-r div{
+    z-index: -10;
+    display: none;
+    height: 300px;
+    width: 205px;
+    border:1px solid #fff;
+    /*display: inline-block;*/
+    box-shadow: 4px 4px 5px lightskyblue;
+    background: linear-gradient(lightskyblue,blueviolet);
+}
+.con2-r li>a{
+    display: inline-block;
+}
+.con2-r img{
+    width: 180px;
+    height: 190px;
+    margin-left: 12px;
+    margin-top: 10px;
+}
+.title5{
+    width: 205px;
+    height: 30px;
+    color: #fff;
+    margin:0 auto;
+    font: 700 18px / 30px SimSun;
+    text-shadow: 1px 1px 1px #000;
+    text-align: center;
+}
+.desc>a{
+    width: 280px;
+    height: 45px;
+    color: #fff;
+    font:900 16px/30px SimSun;
+    text-shadow: 1px 1px 2px lightskyblue;
+    vertical-align: top;
+    margin:10px;
+    text-align: center;
+    box-shadow: -3px 5px 10px lightskyblue;
+    cursor: pointer;
+}
+/*.desc>p:hover div{*/
+/*    display: inline-block;*/
+/*}*/
+.r-f-t{
+    margin-left: -40px;
+}
+.c-r2{
+    width: 255px;
+    margin-top: -20px;
+}
+.h-c2{
+    width: 1000px;
+    height: 825px;
+    margin:50px auto;
+    box-shadow: -5px -5px 10px lightskyblue;
+}
+.part3{
+    width: 1000px;
+    height: 90px;
+    margin:0 auto;
+}
+.nur-t{
+    width: 272px;
+    height: 50px;
+    position: absolute;
+    top: 20px;
+    left: 374px;
+    font:700 23px/50px 华文行楷;
+    color: #fff;
+    text-shadow: 2px 2px 2px #000;
+    text-align: center;
+    box-shadow: 5px 3px 10px lightskyblue;
+}
+.bu8{
+    left:620px;
+    top:62px;
+}
+.bu9{
+    left:633px;
+    top:37px;
+}
+.bu10{
+    left:560px;
+    top:60px;
+}
+.bu11{
+    left:380px;
+    top:50px;
+}
+.h-c2 p{
+    font:700 15px/30px SimSun;
+    color: #fff;
+    text-shadow: 2px 2px 2px #000;
+    margin:20px;
+}
+.h-c2 img{
+    margin:20px;
+}
+.h-c2 img{
+    box-shadow: 5px 10px 20px lightskyblue;
+}
+.com-footer{
+    height: 150px;
+    width: 1180px;
+    margin:0 auto;
+    position: relative;
+}
+.com-footer a{
+    font:900 25px/30px 华文行楷;
+    color: #fff;
+    text-shadow: 2px 2px 2px #000;
+    height: 40px;
+    width: 120px;
+    position: absolute;
+}
+.com-footer>.com-f1{
+    top: 30px;
+    right: 30px;
+}
+.com-footer>.com-f2{
+    top: 30px;
+    right: 130px;
+}
+.com-footer a:hover{
+    color: #2987e4;
+    text-shadow: none;
+    text-decoration: underline;
+}
+#peo{
+    transform:rotate(8deg);
+    -ms-transform:rotate(8deg);
+    -moz-transform:rotate(8deg);
+    -webkit-transform:rotate(8deg);
+    -o-transform:rotate(8deg);
+}

@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+		<title>英雄事迹</title>
+        <link rel="stylesheet" href="people_style.css">
+		<link rel="stylesheet" href="celebrity.css"/>
+		<link rel="stylesheet" href="common.css">
+		<link rel="stylesheet" href="people.dou_style.css">
+		<script src="common.js"></script>
+		<script>
+			var config = [
+				{
+					width: 240,
+					top: 12,
+					left: 30,
+					opacity: 0.2,
+					"z-index": 2
+				},//0
+				{
+					width: 360,
+					top: 42,
+					left: 0,
+					opacity: 0.8,
+					"z-index": 3
+				},//1
+				{
+					width: 480,
+					top: 60,
+					left: 120,
+					opacity: 1,
+					"z-index": 4
+				},//2
+				{
+					width: 360,
+					top: 42,
+					left: 336,
+					opacity: 0.8,
+					"z-index": 3
+				},//3
+				{
+					width: 240,
+					top: 12,
+					left: 450,
+					opacity: 0.2,
+					"z-index": 2
+				}//4
+
+			];
+
+			onload=function () {
+				//假设所有动画执行完毕了
+				var flag=true;
+				var list=my$("slide").children[0].children;
+				function assign() {
+					for(var i=0;i<list.length;i++){
+						animate3(list[i],config[i],function () {
+							flag=true;//动画执行完毕
+						});
+					}
+				}
+				assign();
+
+				var timeId=timeId=setInterval(righthandle,1500);;
+				//注册鼠标进入事件
+				my$("wrap").onmouseover=function () {
+					clearInterval(timeId);
+					animate3(my$("arrow"),{"opacity":1});
+				};
+
+				//鼠标离开事件
+				my$("wrap").onmouseout=function () {
+					timeId=setInterval(righthandle,1500);
+					animate3(my$("arrow"),{"opacity":0});
+				};
+
+				//点击右侧按钮
+				my$("arrRight").onclick=righthandle;
+
+				//点击左侧按钮
+				my$("arrLeft").onclick=lefthandle;
+
+				function righthandle() {
+					//当上一个动画执行完毕之后再执行---防止点击过快图片聚拢
+					if(flag){
+						//将flag置为false
+						flag=false;
+						config.push(config.shift());
+						assign();//flag在动画函数执行完毕后的回调函数中变为true
+					}
+				}
+
+				function lefthandle() {
+					if(flag){
+						flag=false;
+						config.unshift(config.pop());
+						assign();
+					}
+				}
+
+
+			};
+
+		</script>
+	</head>
+    <body>
+    <base target="_blank" >
+    <div class="header">
+		<img src="逆行者.png" alt="">
+	</div>
+    <div class="box">
+		<img src="flower1.png" alt="" class="flower1">
+    	<div class="people">
+    	<span>钟南山</span>
+    	</div>
+    	<div class="choose">
+    		<ul>
+    			<li ><a href="人物事迹.html">人物事迹</a></li>
+    			<li ><a href="https://video.sina.cn/news/2020-04-09/detail-iircuyvh6830241.d.html?from=qudao&wm=3049_all" target="_blank">记录片</a></li>
+    		</ul>
+   		</div>
+    </div>
+    <div class="box1">
+        <div class="box1-nav">
+        	<ul>
+        	    <h3>抗疫英雄事迹</h3>
+        	    <div class="paopao1"></div>
+        	    <div class="paopao2"></div>
+        	    <div class="paopao3"></div>
+        		<li>
+        		<a href="https://www.chinawenwang.com/meiwen/136827.html">抗疫院士：李兰娟
+        		
+        		</a><div class="jt">></div>
+        		<div class="box1-nav-more1 box1-nav-more"><img src="11.png"  height="200" alt="" class="p0" >
+                  <p>李兰娟刷屏了！在抗击新冠疫情中，这位73岁的女院士毫不犹豫地奔向战“疫”第一线，率先提出武汉封城。</p>
+                  <p>1月18日，受国务院、国家卫健委委托，她与钟南山院士等-行6人抵达武汉， 听取了武汉方面的
+                  情况汇报，并查看现场。在武汉，李兰娟作为国家级专家，提出了对疫情的判断，尤其是武汉要采取“不年闲进不出” 措施、 <img src="表情1.jpg" alt="" class="p1">冠状病毒感染要作为乙类传染病甲类管理等重要建议。</p>
+                 
+        		</div>
+        		</li>
+        		<li><a href="https://www.chinawenwang.com/shiyong/136911.html">“疫”无反顾：李文亮
+                </a><div class="box1-nav-more2 box1-nav-more"><img src="12.png" height="200"  alt=""  class="p0">
+        		<p>李文亮(1985年-2020年2月6日)，男，籍贯辽宁省锦州市北镇市，武汉大学临床医学七年制专业
+                毕业。生前为武汉市中心医院眼科医生。李文亮因最早于2019年12月30日向外界发出防护预警，而被称为疫情吹哨人。</p>
+                <p>千夫诺诺，不如一士谔谔。作为医生，李文亮向身边人发出疫情早期预警时，不是不知道这会给 <img src="表情1.jpg" alt="" class="p1">
+                自己带来风险。是医者仁心的担当意识，让他鼓起勇气吹出预警疫情的哨音.</p>
+               
+        		</div><div class="jt">></div></li>
+        		<li><a href="http://jyj.benxi.gov.cn/jyzx/bxjyzx/content_447681">迎“楠”而上：董岳楠
+        		
+        		</a><div class="box1-nav-more3 box1-nav-more"><img src="13.png" height="200"  alt=""  class="p0">
+        		<p>她瘦小的身影每天都会出现在本溪市抗击疫情的第一线，一同随着全市的党员干部守护着明山区，她就是明山区联丰中心校教师董岳楠。90后的她，本应在家里作父母的掌上明珠，生性倔强的她却偏偏奋战在抗击疫情的第一线。明山区文明办面向广大市民招募抗击疫情志愿者，<img src="表情1.jpg" alt="" class="p1">董岳楠接到消息后，第一时间，主动请缨，报名参加志愿者服务队。</p>
+        		
+        		</div><div class="jt">></div></li>
+        		<li><a href="https://baijiahao.baidu.com/s?id=1663876425200766555&wfr=spider&for=pc">青春在战“疫”中绽放：张玉欣
+        		
+        		</a><div class="box1-nav-more4 box1-nav-more"><img src="14.png" height="200"  alt="" class="p0" >
+        		<p>张玉欣工作的龙灯社区是一个老旧小区，有一万多人口，居民大多是老年人。小区居民买高血压、糖尿病等慢性病的药物比较多，有的隔几天就需要再买一次。社区封闭解除前，最多的时候她一天要买五六十种药品，光排队就要好几个小时。</p><img src="表情1.jpg" alt="" class="p1">
+        		<p>登记、买药、送药，不仅工作量巨大，有时药没买到还要忍受居民对她发脾气。</p>
+        		
+        		</div><div class="jt">></div></li>
+        		<li><a href="https://www.sohu.com/a/376961845_753658">铁人院长：张定宇
+        		
+        		</a><div class="box1-nav-more5 box1-nav-more"><img src="15.png" height="200"  alt="" class="p0" >
+        		<p>“我们当医生的苦点没什么，看着患者遭受的痛苦，疫情还没有被攻克，根本顾不上身体上的疲惫。”身患渐冻症，拖着一双跛脚，连续30 多天奔走在抗疫第一线的院长张定宇说。每天早上8 点，<img src="表情1.jpg" alt="" class="p1">金银潭医院要开碰头会，他要听取4 个ICU 病区的主任关于当天患者情况的报告。张定宇经常一边开会，手机一边响个不停。”</p>
+        		
+        		</div><div class="jt">></div>
+        		</li>
+        		<li><a href="https://www.zqwdw.com/zuowendaquan/2020/0518/232513.html">硬核男神：张文宏
+        		
+        		</a><div class="box1-nav-more6 box1-nav-more"><img src="16.png" height="200" alt=""  class="p0">
+        		<p>“我们派驻党员医生上抗疫前线支援，不打招呼，直接报名，没有讨价还价。”- 句铿锵有力的
+                话语，瞬间刷屏各大社交平台，引来无数网友点赞。</p>
+                <p>说这话的人，是上海医疗救治专家组组长、复旦大学附属华山医院感染科党支 部书记张文宏教授。</p>
+                <p>新年之初，战疫令下，为各级党组织和党员干部吹响了冲锋号。华山医院感染科党支部每一名<img src="表情1.jpg" alt="" class="p1">
+                党员同所有医护人员都在同时间赛跑、与病魔较量， 在抗疫线践行着共产党员的初心使命。
+                </p>
+                
+        		</div><div class="jt">></div></li>
+        		<li><a href="http://jz.wenming.cn/ddmf/202003/t20200331_6383572.html">逆行战士：赵童
+        		
+        		</a><div  class="box1-nav-more7 box1-nav-more"><img src="17.png" height="200"  alt="" class="p0">
+        		<p>3月15日晚，中央电视台《新闻联播》报道了一条令人感动的报道：在位于武汉的华中科技大学附属同济医院中法新城院区，一名80岁的新冠肺炎患者突患急性肠梗阻。由于患者粪石较多，紧急情况下，一名医生直接用手将粪石掏了出来，缓解了患者的病痛。 </p>
+        		<p>一身白大褂，一生赤子心。这名让人深深敬佩的医生名叫赵童，<img src="表情1.jpg" alt="" class="p1">是我市人民医院ICU北区副主任、援鄂应急医疗队副队长。</p>
+        		
+        		</div><div class="jt">></div></li>
+        		<li><a href="https://tech.sina.com.cn/roll/2020-03-17/doc-iimxxstf9665258.shtml">坚守到最后：杜斌
+        		
+        		</a><div  class="box1-nav-more8 box1-nav-more"><img src="18.png" height="200"  alt="" class="p0">
+        		<p>在杜斌的心里，指导大家救治最好的方式就是带头守在床旁、守在患者身边。情况紧急时，给病人气管插管，吸痰，杜斌都自己上。</p>
+        		<p>国家卫健委高级别专家组成员 杜斌：我不能要求别人，但我至少能要求我自己，在（病房）里面多待一些时候，来告诉大家说，别着急，你要做什么，或者我来帮着你一起做什么。<img src="表情1.jpg" alt="" class="p1">尤其是越有风险的时候，只有你做了，你才能够对别人提出要求。</p>
+        		
+        		</div><div class="jt">></div></li>
+        		<li><a href="https://politics.gmw.cn/2020-03/18/content_33660726.htm">仁心仁术守护生命：郭海鹏
+        		
+        		</a><div class="box1-nav-more9 box1-nav-more"><img src="19.png" height="200"  alt=""  class="p0">
+        		<p>看到了危重病人已经形成了一种类似于条件反射一样，看到了就想冲上去，就那种冲动，不抛弃、不放弃。</p>
+        		<p>郭海鹏是土生土长的山东人，攻读硕士、博士学位期间，就读于武汉大学，疫情发生后，郭海鹏毫不犹豫地<img src="表情1.jpg" alt="" class="p1">报名参加医疗队。而其实他刚刚结束在美国哈佛大学三年的博士后培训，回国还不到三个月。</p>
+        		
+        		</div><div class="jt">></div></li>
+        	</ul>
+        </div>
+    	<div class="box1-con">
+    	<div class="jianjie">
+    	    <div class="peojianjie">
+    		     <div class="ren">人</div>
+    		     <div class="wu">物</div>
+    		     <div class="jian">简</div>
+    		     <div class="jie">介</div>
+    	    </div>	
+    		<div class="box1-pic"><img src="钟南山院士.jpg" height="400"  alt="钟南山院士" title="钟南山院士"></div>
+    	    <div class="box1-name">钟南山&nbsp(中国工程院院士、著名呼吸病学专家)</div>
+    	    <div class="box1-jieshao">
+    	    	<p>钟南山，男，汉族，中共党员，1936年10月出生于江苏南京，福建厦门人，呼吸内科学家，广州医科大学附属第一医院国家呼吸系统疾病临床医学研究中心主任，中国工程院院士  ，中国医学科学院学部委员  ，中国抗击非典型肺炎的领军人物，曾任广州医学院院长、党委书记，广州市呼吸疾病研究所所长、广州呼吸疾病国家重点实验室主任、中华医学会会长。  国家卫健委高级别专家组组长、  国家健康科普专家。 </p>
+    	    	<p>钟南山长期致力于重大呼吸道传染病及慢性呼吸系统疾病的研究、预防与治疗，成果丰硕，实绩突出</p>
+    	    </div>
+    	</div>
+    </div>
+		<div class="dec">
+			<span class="b1 pos1"></span>
+			<span class="b1 pos4"></span>
+			<span class="deco2 pos6"></span>
+			<span class="deco1 pos8"></span>
+			<span class="deco1 pos9"></span>
+			<span class="deco1 pos10"></span>
+			<span class="deco1 pos11"></span>
+		</div>
+		<img src="flower2.png" alt="" class="flower2">
+    </div>
+    <div class="whirligig">
+		<span class="deco2 pos6"></span>
+		<span class="deco1 pos8"></span>
+		<span class="deco1 pos10"></span>
+		<span class="b1 pos11"></span>
+		<span class="deco2 pos12"></span>
+		<h2 class="title">2020“感动中国”抗疫人物推荐词>></h2>
+		<div class="wrap" id="wrap">
+			<div class="slide" id="slide">
+				<ul>
+					<li><a href="#"><img src="../images/旋转木马/ro1.png" alt=""/></a></li>
+					<li><a href="#"><img src="../images/旋转木马/ro2.png" alt=""/></a></li>
+					<li><a href="#"><img src="../images/旋转木马/ro3.png" alt=""/></a></li>
+					<li><a href="#"><img src="../images/旋转木马/ro4.png" alt=""/></a></li>
+					<li><a href="#"><img src="../images/旋转木马/ro5.png" alt=""/></a></li>
+				</ul>
+				<div class="arrow" id="arrow">
+					<a href="javascript:;" class="prev" id="arrLeft" target="_self"></a>
+					<a href="javascript:;" class="next" id="arrRight" target="_self"></a>
+				</div>
+			</div>
+		</div>
+		2020年的春节，在所有中国人的心里，注定是一个永生难忘的记忆。新型冠状病毒的肆
+			虐，让辞旧迎新的钟声更加沉重，人们脸上的那一个个口罩，让这个春节倍感冷清。
+			这个冬天，梅花依然宁静地开放;这个冬天，蓝天依旧明净如洗;，这个冬天的武汉却非常艰
+			难，全国人民却非常艰难。与此同时，有一群人,他们正冲在前方，用自己的平凡之躯为身后的亿万中国人筑起防
+			护的堡垒，他们舍小家为大家，不眠不休，战斗在这场没有硝烟的战场上的最前沿。他们是
+			来自全国各地的最美逆行者，他们是新时代的最美先锋人物，他们是可亲可敬的白衣天使。
+			这世上哪有什么岁月静好，只是因为有人在替我们负重前行罢了,这世上哪有什么天生
+			的英雄，只有因为人们需要，才有人愿意牺牲自己成为英雄。虽然我不知道他们是谁，但我明白他们是为了谁。致敬白衣天使!致敬最美逆行者!致敬抗击疫情的每一个人!
+	</div>
+    <div class="box2">
+		<div class="part part3 part1">
+			<span class="b1 bu1"></span>
+			<span class="b3 bu3"></span>
+			<span class="b2 bu6"></span>
+			<span class="b1 bu8"></span>
+			<span class="b3 bu9"></span>
+			<span class="b2 bu10"></span>
+			<span class="b3 bu11"></span>
+			<div class="nur-t">抗疫事迹</div>
+		</div>
+        <div class="box2-con">
+        <div class="box2-left">
+        	<div class="box2-pic1"><img src="zslp.jpeg" height="200"  alt=""></div>
+        	<div class="stroy">
+        		<p>17年前，在“抗击非典”的严峻时刻，作为中国工程院院士、我国呼吸病学的顶尖级专家，钟南山院士说了一句掷地有声的话：“把重症病人都送到我这里来！”那年他已经67岁了，可是一直奋战在前线，为中国最后取得抗非典的胜利立下了卓著功勋！钟南山院士因此被评为2003年“感动中国十大人物”之一。</p>
+        		<p>最近大家可能听说了正流传的这么一句话：“火神山、雷神山、钟南山，三‘山’齐聚克难关！”足见钟南山在老百姓心中的威望。</p>
+        		<p>今年，当新冠病毒肺炎的疫情出现时，许多人还没意识到病毒的凶险程度，他便以自己精深的专业素养第一个告诉大家真相：“新冠病毒有人传人的危险，请大家没有特殊情况千万别去武汉！”但是，已经84岁高龄的他，却毅然奔赴武汉，来到疫情最严重也最危险的第一线。在火车上他一边吃着盒饭，一边研究疫情，后来实在太累了，靠在椅子上就睡着了。这幅照片感动了无数人，大家称赞钟南山院士是“逆行者”！</p>
+        	</div>
+        </div>
+            <div class="box2-right">
+            	<div class="box2-pic2"><img src="mh.jpg" height="250"  alt=""></div>
+            	<div class="box2-right-con">
+            		<h3>荣誉表彰</h3>
+            		<ul>
+            			<li>2019年9月25日，钟南山被评选为“最美奋斗者”</li>
+            			<li>2020年3月24日，钟南山团队获得国家科技奖创新团队奖呼吸疾病防控创新团队提名</li>
+            			<li>2020年8月11日，习近平签署主席令，授予钟南山“共和国勋章”</li>
+            		</ul>
+            		<div class="paopao4"></div>
+            		<div class="paopao5"></div>
+            		<div class="paopao6"></div>
+            		<div class="paopao7"></div>
+            		<div class="paopao8"></div>
+            		<div class="paopao9"></div>
+            		<div class="paopao10"></div>
+            		<div class="paopao11"></div>
+            		<div class="paopao12"></div>
+            		<div class="box2-right-more">
+            		   <a href="https://baike.baidu.com/item/%E9%92%9F%E5%8D%97%E5%B1%B1/653914?fr=aladdin" class="more">更多...</a>
+            		</div>
+            	</div>
+            </div>
+        	
+    	   
+        </div>	
+    </div>
+	<div class="part part3 part1">
+		<span class="b1 bu1"></span>
+		<span class="b3 bu3"></span>
+		<span class="b2 bu6"></span>
+		<span class="b1 bu8"></span>
+		<span class="b3 bu9"></span>
+		<span class="b2 bu10"></span>
+		<span class="b3 bu11"></span>
+		<div class="nur-t">人物评价</div>
+	</div>
+    <div class="box3">
+    	<div class="box3-con">
+    		<div class="box3-con-left">
+    		    <div class="box3-con-left-pic"><img src="zns.jpg" width="400" alt=""></div>
+    			<p>这次抗击非典如果没有钟南山院士，结果可能就不会是这样。（中共中央政治局原常委、全国人大常委会原委员长张德江）</p>
+    			<p>他投身呼吸系统疾病的临床、教学和科研工作50年，是推进中国呼吸病学发展迈向国际前沿的学科带头人之一。在非典疫情中，率先带领团队投入救治行动，确立广东病原学，组织广东非典防治研究，获国际上最高存活率。在甲流防治中，成功抢救多例重症甲流患者，参与制定卫生部治疗方案。</p>
+    			<p>钟南山不仅医术精湛，医德高尚，他尊重科学，实事求是，敢医敢言的道德风骨和学术勇气更令人景仰。他勇敢地否定了卫生部所属国家疾病预防控制中心关于“典型衣原体是非典型肺炎病因”的观点，为广东卫生行政部门及时制定救治方案提供了决策论据，使广东成为全球非典病人治愈率最高、死亡率最低的地区之一。他最早制定出《非典型肺炎临床诊断标准》。他带领课题组，在全世界率先探索出了一套富有明显疗效的防治经验。这套经验被世界卫生组织的专家组认为对全世界抗击非典型肺炎有指导意义。（央视国际）</p>
+				<img src="pic1.jpg" alt="">
+				<p>在这场关系着人类共同命运的殊死斗争中，钟南山以其战士的勇敢无畏、学者的铮铮风骨和悬壶济世的仁心仁术，挺身而出，冒死犯险，力挽狂澜，作出了杰出的贡献，从而赢得了世人由衷的敬重。他的名字，他所代表的精神，已经成为广东抗非斗争一面飘扬的旗帜。那一刻的悲壮，无啻于“向我开炮”的呼叫。他和同事们用生命、热血换来的防治非典的宝贵经验，不仅为广东、为中国，同时也是为全人类作出了重大贡献。</p>
+    			<p>在2003年，这位本可以成为运动员的医生，成为了英雄。在抗击非典的过程中，钟南山的治疗方法得到了世卫组织的采纳，他开创性地使用了非侵入性通气技术，在舆论上他一直强调疾病的严重性，真正的成为了一名杰出人物。多年以来，钟南山体现出令人羡慕的健康水平，他经常被人拍到露出健硕肌肉，做举重训练也得心应手，篮球场也经常能见到他的身影。虽然他最后没有选择成为一名职业运动员，但几十年来钟南山一直坚持进行身体锻炼，直到现在也是如此。他说‘锻炼对于保持体形起着关键作用。（《马卡报》评）</p>
+    			<p>从非典到新冠肺炎，钟南山一直站在抗疫一线，成为公共卫生事件应急体系建设的推动者，促成了国家多项政策法规的制定，更成为突发公共卫生事件的代言人，成为稳定民心的科学家代表。</p>
+    			<p>新冠肺炎疫情发生后，他敢医敢言，提出存在“人传人”现象，强调严格防控，领导撰写新冠肺炎诊疗方案，在疫情防控、重症救治、科研攻关等方面作出杰出贡献。（新华网 评 ）</p>
+    		</div>
+    	<a href="https://baike.baidu.com/item/%E9%92%9F%E5%8D%97%E5%B1%B1/653914?fr=aladdin" class="more">更多...</a>
+    	</div>
+    </div>
+
+	<div class="box5">
+		<div class="box5-nav">
+			<span>钟南山  （纪录片）</span>
+			<div class="bb1"></div>
+			<div class="bb2"></div>
+			<div class="bb3"></div>
+		</div>
+		<div class="box5-con">
+			<p>纪录片《钟南山》于2020年4月8日21时30分在广东卫视播出，随后在广东广播电视台新闻频道、国际频道、公共频道及互联网平台陆续推出。
+			</p>
+			<div class="box5-con-line1">
+				<div class="box5-con-line1-left">中文名&nbsp&nbsp&nbsp&nbsp&nbsp钟南山</div>
+				<div class="box5-con-line1-right">播出频道&nbsp&nbsp&nbsp&nbsp&nbsp广东卫视</div>
+			</div>
+			<div class="box5-con-line2">
+				<div class="box5-con-line2-left">播出时间&nbsp&nbsp&nbsp&nbsp2020年4月8日21时30分</div>
+				<div class="box5-con-line2-right">类&nbsp&nbsp型&nbsp&nbsp&nbsp&nbsp&nbsp纪录片</div>
+			</div>
+			<div class="box5-con-jieshao">
+				<img src="znscartoon.jpg" height="200" alt="">
+				<p>该片由广东广播电视台对外传播中心（国际频道）及广东广播电视台董珂工作室摄制。该片从新冠肺炎疫情线索切入，通过讲述钟南山在2020年新冠肺炎疫情和2003年非典疫情当中奋斗在抗疫一线的故事，带领观众走近真实的钟南山。</p>
+				<p>一个人在面对艰难时如何抉择，往往跟他的成长经历相关。据该片导演董珂介绍，该片中有大量珍贵的影像资料，回顾了钟南山80多年来的人生历程。希望通过该片，让观众产生情感上的共鸣，让观众“理解南山，感悟南山”。</p>
+			</div>
+			<div class="box5-con-more"><a href="https://baike.baidu.com/item/%E9%92%9F%E5%8D%97%E5%B1%B1/49802889#viewPageContent">更多...</a></div>
+		</div>
+	</div>
+
+    <div class="box4-title">其它故事</div>
+    <div class="box4">
+    	<div class="box4-left">
+    		<div class="box4-left-top">
+    		   <a href="https://baike.baidu.com/tashuo/browse/content?id=095968e1ca61b2b823d6aa00&lemmaId=653914&fromLemmaModule=pcBottom"><img src="1.jpg"  width="330" alt="">
+    		   <p>钟南山  逢危有我，八秩不辞！</p>
+    		   </a>	
+    		</div>
+    		<div class="box4-left-bottom">
+    			<a href="https://baike.baidu.com/tashuo/browse/content?id=095968e1ca61b2b823d6aa00&lemmaId=653914&fromLemmaModule=pcBottom"><p>17年前，是他，领军战非典；17年后，又是他，披挂上阵，四处奔波，冲到抗击新疫情的第一线，给全国人民吃下定心丸。</p></a>
+    		</div>
+    	</div>
+    	<div class="box4-cen">
+    		<div class="box4-cen-top">
+    			<a href="https://baike.baidu.com/tashuo/browse/content?id=5f49614e0f047764eef48e00&lemmaId=653914&fromLemmaModule=pcBottom"><img src="2.png"  width="330" alt="">
+    			<p>
+钟南山曾经打破全国田径纪录，还差点当上专业运动员</p></a>
+    		</div>
+    		<div class="box4-cen-bottom">
+    			<a href="https://baike.baidu.com/tashuo/browse/content?id=5f49614e0f047764eef48e00&lemmaId=653914&fromLemmaModule=pcBottom">
+    				<p>在最后的冲刺阶段，他再次挑战了自己，最终战胜了自己。1958年8月份，在第一届全运会的比赛测验中，钟南山以54秒2的成绩...</p>
+    			</a>
+    		</div>
+    	</div>
+    	<div class="box4-right">
+    		<div class="box4-right-top">
+    		<a href="https://baike.baidu.com/tashuo/browse/content?id=bad7cf35694aca09e4e3331c&lemmaId=653914&fromLemmaModule=pcBottom"><img src="3.jpg"  width="330" alt="">
+    		<p>
+疫情背后，老去的中国神医：84岁钟南山，90岁屠呦呦，97岁吴孟超</p>
+    		</a>
+    		</div>
+    		<div class="box4-right-bottom">
+    			<a href="https://baike.baidu.com/tashuo/browse/content?id=bad7cf35694aca09e4e3331c&lemmaId=653914&fromLemmaModule=pcBottom">
+    				<p>
+很多人认为读书是为功名利禄，然而一场疫情用惨痛的代价告诉人们，不管你财富多少、地位几何，当死神来临时，招呼都不打一声。</p>
+    			</a>
+    		</div>
+    	</div>
+    </div>
+	<div class="com-footer">
+		<a href="../homep.html" class="com-f1" target="_self">首页>></a>
+		<a href="#box" class="com-f2">顶部>></a>
+	</div>
+    </body>
+</html>

@@ -1,0 +1,224 @@
+@charset "UTF-8";
+/*初始化  reset*/
+blockquote,body,button,dd,dl,dt,fieldset,form,h1,h2,h3,h4,h5,h6,hr,input,legend,li,ol,p,pre,td,textarea,th,ul{margin:0;padding:0}
+body,button,input,select,textarea{font:12px/1.5 "Microsoft YaHei", "微软雅黑", SimSun, "宋体", sans-serif;color: #666;}
+ol,ul{list-style:none}
+a{text-decoration:none}
+fieldset,img{border:0;vertical-align:top;}
+a,input,button,select,textarea{outline:none;}
+a,button{cursor:pointer;}
+
+.wrap{
+    width:720px;
+    height: 400px;
+    float: left;
+}
+.slide {
+    height:300px;
+    position: relative;
+}
+.slide li{
+    position: absolute;
+    left:120px;
+    top:0;
+    box-shadow: 10px 10px 20px lightskyblue;
+}
+.slide li img{
+    width: 100%;
+}
+.arrow{
+    opacity: 0;
+}
+.prev,.next{
+    width:46px;
+    height:67px;
+    position: absolute;
+    top:50%;
+    margin-top:-34px;
+    background: url(../images/旋转木马/prev.png) no-repeat;
+    z-index: 99;
+    background-size: 46px 67px;
+}
+.next{
+    right:21px;
+    top:155px;
+    background-image: url(../images/旋转木马/next.png);
+}
+.title{
+    font:700 30px/40px 华文行楷;
+    color: greenyellow;
+    text-shadow: 2px 2px 2px #000;
+}
+.whirligig{
+    font:700 20px/40px 华文行楷;
+    color:#2987e4;
+    text-shadow: 2px 2px 2px #fff;
+}
+.deco1{
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    border:1px solid lightskyblue;
+    border-radius: 50%;
+    box-shadow: 3px 4px 10px lightskyblue inset;
+}
+.deco2{
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    border:1px solid lightskyblue;
+    border-radius: 50%;
+    box-shadow: 3px 5px 20px lightskyblue inset;
+}
+.deco3{
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border:1px solid lightskyblue;
+    border-radius: 50%;
+    box-shadow: 3px 2px 7px lightskyblue inset;
+}
+.pos1{
+    left: 200px;
+    top: 53px;
+}
+.pos2{
+    left: 90px;
+    top: 54px;
+}
+.pos3{
+    left: 30px;
+    top: 60px;
+}
+.pos4{
+    left: 118px;
+    top: 5px;
+}.pos5{
+     right: 300px;
+     top: 50px;
+ }.pos6{
+      right: 200px;
+      top: 70px;
+  }
+.pos7{
+    right: 250px;
+    top: 15px;
+}
+.pos8{
+    right: 100px;
+    top: 10px;
+}
+.pos9{
+    right: 133px;
+    top: 83px;
+}
+.pos10{
+    right: 300px;
+    bottom: 7px;
+}
+.pos11{
+    right: 270px;
+    bottom: 40px;
+}
+.pos12{
+    right: 290px;
+    bottom: 100px;
+}
+.b1{
+    width: 23px;
+    height: 23px;
+    border:1px solid #2987e4;
+    box-shadow: 5px 2px 10px #2987e4 inset;
+    border-radius: 50%;
+    position: absolute;
+}
+.b2{
+    width: 15px;
+    height: 15px;
+    border:1px solid #2987e4;
+    box-shadow: 3px 5px 10px #2987e4 inset;
+    border-radius: 50%;
+    position: absolute;
+}
+.b3{
+    width: 11px;
+    height: 11px;
+    border:1px solid #2987e4;
+    box-shadow: 5px 2px 10px #2987e4 inset;
+    border-radius: 50%;
+    position: absolute;
+}
+
+.bu8{
+    left:620px;
+    top:62px;
+}
+.bu9{
+    left:633px;
+    top:37px;
+}
+.bu10{
+    left:560px;
+    top:60px;
+}
+.bu11{
+    left:380px;
+    top:50px;
+}
+.part{
+    position: relative;
+    padding:0px 23px;
+}
+.part span{
+    position: absolute;
+}
+.bu1{
+    left: 29px;
+    top:-29px;
+}
+.bu2{
+    left: -2px;
+    top:-1px;
+}
+.bu3{
+    left: -1px;
+    top:47px;
+}
+.bu4{
+    left: 566px;
+    top:-15px;
+}
+.bu5{
+    left: -17px;
+    top:-24px;
+}
+.bu6{
+    left: -19px;
+    top:17px;
+}
+.bu7{
+    left: 606px;
+    top:-20px;
+}
+.part3{
+    width: 1000px;
+    height: 90px;
+    margin:-25px auto 10px;}
+.nur-t{
+    width: 272px;
+    height: 50px;
+    position: absolute;
+    top: 20px;
+    left: 374px;
+    font:700 30px/50px 华文行楷;
+    color: #fff;
+    text-shadow: 2px 2px 2px #000;
+    text-align: center;
+    box-shadow: 5px 3px 10px lightskyblue;
+    background-image: url(../images/心得体会/heart.gif);
+
+}
+
+
+
+

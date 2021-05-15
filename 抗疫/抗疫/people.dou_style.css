@@ -1,0 +1,118 @@
+.box5{
+	width: 1159px;
+	height: 470px;
+	margin: 20px auto;
+	box-shadow: -4px -4px 15px #fff;
+}
+.box5-nav{
+	height: 90px;
+	position: relative;
+}
+.box5-nav span{
+	display: inline-block;
+	width: 280px;
+	height: 50px;
+	border-radius: 15%;
+	text-align: center;
+	margin-top: 20px;
+	margin-left: 20px;
+	font: 700 30px/50px  华文行楷;
+	text-shadow: 2px 2px 2px #000;
+	box-shadow: 5px 2px 10px #0085B2 ;
+	background-image: url(../images/心得体会/heart.gif);
+	color:#00BFFF;
+}
+.box5 .box1-nav .paopao1{
+	width: 18px;
+	height: 18px;
+	border-radius: 50%;
+	box-shadow: 2px -1px 10px #0085B2 inset;
+	position: absolute;
+	left:35px;
+	top: 7px;
+}
+.box5 .box1-nav .paopao2{
+	width: 15px;
+	height: 15px;
+	border-radius: 50%;
+	box-shadow: 2px -1px 10px #0085B2 inset;
+	position: absolute;
+	left:-4px;
+	top: 31px;
+}
+.box5 .box1-nav .paopao3{
+	width: 16px;
+	height: 16px;
+	border-radius: 50%;
+	box-shadow: 2px -1px 10px #0085B2 inset;
+	position: absolute;
+	left:12px;
+	top: -5px;
+}
+.box5-con p{
+	text-indent: 2em;
+	font:700 16px/30px SimSun;
+	color: #444;
+	height: 60px;
+}
+.box5-con-line1,.box5-con-line2{
+	height: 30px;
+	width: 1050px;
+	margin:10px auto;
+	border-bottom: 1px dotted #ccc;
+	position: relative;
+}
+.box5-con-line1-left,.box5-con-line2-left{
+	float: left;
+	height: 25px;
+	width: 300px;
+	position: absolute;
+	left: 40px;
+	font-weight: 700;
+	font-size: 13px;
+	color: #222;
+}
+.box5-con-line1-right,.box5-con-line2-right{
+	width: 25px;
+	width: 300px;
+	position: absolute;
+	font-weight: 700;
+	font-size: 13px;
+	left: 540px;
+	color: #222;
+}
+.box5-con-jieshao {
+     height: 200px;
+     float: left;
+	 font:700 16px/30px SimSun;
+}
+.box5-con-jieshao p{
+	margin-bottom: 30px;
+}
+.box5 img{
+	float: right;
+	margin:10px;
+	box-shadow: -4px 4px 8px lightskyblue;
+}
+.one{
+	height: 80px;
+	margin-top: 10px;
+}
+.box5-con{
+	height: 374px;
+	margin-left: 20px;
+	position: relative;
+}
+.box5-con-more a{
+	font-weight: 900;
+	text-decoration: underline;
+	display: inline-block;
+	height: 20px;
+	width: 120px;
+	position: absolute;
+	bottom: 11px;
+	left:-30px;
+	text-align: center;
+	font: italic 18px/20px 宋体 ;
+	color: blueviolet;
+}

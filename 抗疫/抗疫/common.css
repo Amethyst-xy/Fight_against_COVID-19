@@ -1,0 +1,97 @@
+body,ul,h1,h2,h3,h4,h5,h6,p,th,td,dl,dd,form,fieldset,legend,input,textarea,select,div{
+    margin:0;padding:0
+}
+body{
+    font-family: 宋体;
+    height: 3400px;
+    background: url("天空.jpg");
+}
+li{
+    list-style:none
+}
+.header{
+    height: 141px;
+    width: 1200px;
+    border-radius: 50%;
+    box-shadow: 5px 2px 10px #888;
+    margin:10px auto 0px;
+    background-color: #fff;
+    padding-top: 5px;
+}
+.header>img{
+    display: inherit;
+    height: 134px;
+    margin:0 auto;
+    width: 290px;
+}
+.box{
+    height: 83px;
+    width: 1159px;
+    border:1px solid #ddd;
+    margin:40px auto;
+    box-shadow: 5px 2px 10px #777 ;
+}
+.box .people span{
+    display:inline-block;
+    height: 30px;
+    font:700 30px/45px 华文行楷;
+    text-shadow: 2px 2px 2px #000;
+    color: greenyellow;
+    padding-left: 10px;
+}
+.box .people{
+    height: 48px;
+    border-bottom:1px solid #ddd;
+}
+.box .choose{
+    margin-left: 150px;
+    height: 30px;
+    position: relative;
+}
+.box .choose li{
+    height: 30px;
+    width: 100px;
+    float: left;
+    text-align: center;
+    box-shadow: 5px 5px 5px lightskyblue;
+}
+.box .choose ul li a{
+    display: inline-block;
+    height: 30px;
+    font:900 20px/30px 华文行楷;
+    text-decoration: none;
+    color: #000;
+}
+
+.box .choose ul li:hover{
+    background-color:#A6FF4D;
+    color:#fff;
+    box-shadow: 5px 2px 10px #00B200;
+}
+.com-footer{
+    height: 150px;
+    width: 1180px;
+    margin:0 auto;
+    position: relative;
+}
+.com-footer a{
+    font:900 25px/30px 华文行楷;
+    color: #fff;
+    text-shadow: 2px 2px 2px #000;
+    height: 40px;
+    width: 120px;
+    position: absolute;
+}
+.com-footer a:hover{
+    color: #2987e4;
+    text-shadow: none;
+    text-decoration: underline;
+}
+.com-footer>.com-f1{
+    bottom: 20px;
+    right: 30px;
+}
+.com-footer>.com-f2{
+    bottom: 20px;
+    right: 130px;
+}
